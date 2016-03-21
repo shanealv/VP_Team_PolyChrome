@@ -7,7 +7,7 @@
 #X obj 298 192 pix_video;
 #X msg 243 175 dialog;
 #X obj 225 678 hsl 128 15 0 1 0 0 empty empty threshold -2 -8 0 10
--262144 -1 -1 3500 1;
+-262144 -1 -1 3493 1;
 #X obj 298 528 rectangle 5.33 4;
 #X msg 527 79 dimen 640 480;
 #X obj 499 315 s x;
@@ -46,7 +46,7 @@
 #X obj 23 421 table tab-v;
 #X obj 222 728 s high;
 #X obj 84 678 hsl 128 15 0 0.1 0 0 empty empty threshold -2 -8 0 10
--262144 -1 -1 6800 1;
+-262144 -1 -1 12700 1;
 #X floatatom 81 704 5 0 0 0 - - -;
 #X obj 81 728 s low;
 #X obj 247 307 r low;
@@ -98,7 +98,7 @@
 #X floatatom 901 683 5 0 0 3 R_lvs - -;
 #X obj 901 643 f;
 #X obj 131 102 s start;
-#X obj 131 63 tgl 30 0 empty empty START 32 15 0 20 -262144 -1 -1 1
+#X obj 131 63 tgl 30 0 empty empty START 32 15 0 20 -262144 -1 -1 0
 1;
 #X obj 636 123 r start;
 #X obj 355 110 r start;
@@ -163,7 +163,6 @@
 #X connect 36 0 20 0;
 #X connect 37 0 21 0;
 #X connect 38 0 31 0;
-#X connect 39 0 40 0;
 #X connect 39 0 110 0;
 #X connect 45 0 46 0;
 #X connect 46 0 47 0;
@@ -246,7 +245,6 @@
 #X connect 114 0 45 0;
 #X connect 115 0 7 0;
 #X connect 116 0 117 0;
-#X connect 117 0 97 0;
 #X connect 117 1 1 0;
 #X connect 117 2 9 0;
 #X connect 118 0 114 0;
