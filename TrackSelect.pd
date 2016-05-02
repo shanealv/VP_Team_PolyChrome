@@ -18,7 +18,7 @@
 #X obj 130 523 f;
 #X obj 130 662 change;
 #X floatatom 145 494 5 0 0 0 - - -;
-#X obj 53 465 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 53 465 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 130 692 outlet;
 #X obj 614 228 counter;
@@ -28,7 +28,7 @@
 #X msg 633 394 0;
 #X msg 643 423 0;
 #X msg 653 198 15;
-#X obj 614 359 select 0;
+#X obj 614 360 select 0;
 #X msg 653 452 11;
 #X obj 793 377 loadbang;
 #X obj 790 123 loadbang;
@@ -36,7 +36,7 @@
 #X obj 634 578 s py;
 #X obj 535 127 s m_bang;
 #X text 649 81 Sends Coordinates for Calculations;
-#X obj 614 82 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 614 82 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 53 435 r start;
 #X obj 614 52 r start;
@@ -64,8 +64,8 @@
 #X msg 534 465 set \$1;
 #X floatatom 534 446 5 0 0 0 - - -;
 #X msg 534 425 r \$0-reset;
-#X obj 145 345 expr if($f1 > 30 && $f1 > \$2 && $f1 > $f3 \, 1 \, 0)
-\; if($f2 > 30 && $f2 > $f1 && $f2 > $f3 \, 2 \, 0) \; if($f3 > 30
+#X obj 145 345 expr if($f1 > 10 && $f1 > \$2 && $f1 > $f3 \, 1 \, 0)
+\; if($f2 > 10 && $f2 > $f1 && $f2 > $f3 \, 2 \, 0) \; if($f3 > 10
 && $f3 > $f1 && $f3 > $f2 \, 3 \, 0);
 #X connect 0 0 1 0;
 #X connect 1 0 2 1;

@@ -15,7 +15,7 @@
 #X obj 227 329 expr if($f1 < 0.16 || $f1 > 0.83 \, 1 \, 0);
 #X obj 255 349 expr if($f1 >= 0.16 && $f1 < 0.5 \, 1 \, 0);
 #X obj 284 368 expr if($f1 >= 0.5 && $f1 <= 0.83 \, 1 \, 0);
-#X obj 288 254 expr if($f1 > 0.2 && $f2 > 0.2 \, 1 \, 0);
+#X obj 288 254 expr if($f1 > 0.3 && $f2 > 0.2 \, 1 \, 0);
 #X connect 1 0 7 0;
 #X connect 2 0 0 0;
 #X connect 3 0 13 0;
